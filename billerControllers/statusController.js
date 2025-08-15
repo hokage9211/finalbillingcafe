@@ -1,4 +1,4 @@
-const StatusLog = require('../billerModels/StatusLogg');
+const StatusLog = require('../billerModels/statusLogg');
 
 // Start Controller
 exports.logStart = async (req, res) => {
@@ -39,3 +39,4 @@ exports.logHelp = async (req, res) => {
         res.status(500).json({ message: 'Error logging help request' });
     }
 };
+
