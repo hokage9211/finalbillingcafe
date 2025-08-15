@@ -24,7 +24,7 @@ exports.createBill = async (req, res) => {
         console.log(billTime)
 
         const now = Date.now();
-        const maxDelay = 2000; // 5 seconds
+        const maxDelay = 5000; // 5 seconds
 
         if (isNaN(billTime)) {
             return res.status(400).json({ error: "Invalid createdAt timestamp" });
